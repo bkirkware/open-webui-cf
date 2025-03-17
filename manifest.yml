@@ -9,6 +9,6 @@ applications:
   instances: 1
   memory: 2G
   services:
-  - nomic-embed-text
-  - gemma-2:2b
+  - local-embed
+  - local-chat
   stack: cflinuxfs4
