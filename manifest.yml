@@ -1,0 +1,14 @@
+applications:
+- name: open-webui-cf
+  disk_quota: 6G
+  env:
+    WEBUI_AUTH: "False"
+    ENABLE_SIGNUP: "False"
+    WEBUI_SECRET_KEY: "12324324432"
+    WEBUI_NAME: Tanzu Platform
+  instances: 1
+  memory: 2G
+  services:
+  - nomic-embed-text
+  - gemma-2:2b
+  stack: cflinuxfs4
